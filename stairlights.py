@@ -18,7 +18,7 @@ def goColour(strip, green, red, blue, start, end):
 strip = neopixel.NeoPixel(board.D18, 240)
 
 try:
-    goColour(strip, 0, 0, 0, 0, 239) #clear the strip
+    strip.fill((0, 0, 0)) #clear the strip
     oldTemp = 0
 
     #get the data from the api website
